@@ -3,36 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Qimar</title>
+  <title>MUKI</title>
   <link rel="stylesheet" href="css/styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" href="resources/img/image2.ico" type="image/png">
+  <!-- La fuente Alumni Sans Pinstripe se importa desde el CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="resources/img/image2.ico" type="image/png">
 
 </head>
 <body>
 <header>
   <div class="logo">
-    <h1><a href="#index">Qimar</a></h1>
+    <h1><a href="#index">MUKI</a></h1>
   </div>
-
   <nav id="main-nav">
     <ul>
-      <li><a href="#">CATÁLOGO</a></li>
-      <li><a href="#">GEMAS</a></li>
-      <li><a href="#">NOSOTROS</a></li>
-      <li><a href="#">CONTACTO</a></li>
+      <li><a href="html/catalogo/anillos.html">CATÁLOGO</a></li>
+      <li><a href="html/gemas.html">GEMAS</a></li>
+      <li><a href="html/nosotros.html">NOSOTROS</a></li>
+      <li><a href="html/contacto.html">CONTACTO</a></li>
+      <li><a href="html/carrito.html" aria-label="Carrito" class="carrito"><i class="fas fa-shopping-cart"></i></a></li>
     </ul>
   </nav>
-
   <button id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
 </header>
 
 <main>
 <section class="video-fondo">
-  <video id="videoQuimar" src="resources/videos/ring_emerald_1.mp4" autoplay muted loop playsinline></video>
+  <video id="videoMuki" src="resources/videos/ring_emerald_1.mp4" autoplay muted loop playsinline></video>
   <div class="contenido-superpuesto">
     <p>Cada gema, una historia <br>única tallada a mano</p>
   </div>
@@ -43,7 +40,7 @@
 <section>
   <h2>Desde la talla precisa de cada gema hasta el trazo delicado de la filigrana, creamos joyas únicas que fusionan artesanía, identidad y arte.</h2>
   <div class="paralelogramo">
-    <img src="resources/img/image.png" alt="Joyas artesanales de Qimar">
+    <img src="resources/img/image.png" alt="Joyas artesanales de MUKI">
   </div>
 </section>
 <div class="separador-decorativo">
@@ -51,42 +48,44 @@
 </div>
 <section class="galeria-productos">
   <div class="item">
-    <a href="#">
+    <a href="html/catalogo/anillos.html">
       <img src="resources/img/anillo.png" alt="Anillos">
       <span>Anillos</span>
     </a>
   </div>
   
   <div class="item" id="aretes">
-    <a href="#">
+    <a href="html/catalogo/aretes.html">
       <img src="resources/img/arete_1.png" alt="Aretes">
       <span>Aretes</span>
     </a>
   </div>
   
   <div class="item">
-    <a href="#">
+    <a href="html/catalogo/collares.html">
       <img src="resources/img/collar.png" alt="Collares">
       <span>Collares</span>
     </a>
   </div>
 
   <div class="item">
-    <a href="#">
+    <a href="html/catalogo/pulseras.html">
       <img src="resources/img/brazalete.png" alt="Pulseras">
       <span>Pulseras</span>
     </a>
   </div>
 
   <div class="item">
-    <a href="#">
+    <a href="html/catalogo/otros.html">
       <img src="resources/img/otros.png" alt="Otros">
       <span>Otros</span>
     </a>
   </div>
 </section>
-
-
+<section>
+  <h2>Inspiración</h2>
+  <p>Prada inspiró la idea con ayuda de honguito.</p>
+</section>
 
 
 
@@ -94,91 +93,34 @@
 
 <footer>
   <br>
-  <p>Síguenos en nuestras redes sociales</p><br>
+
   
 <div class="social-icons">
-  <a href="https://www.instagram.com/qimargem/" target="_blank" aria-label="Instagram" class="instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="mailto:qimar2025@gmail.com" target="_blank" aria-label="Correo" class="correo">
-    <i class="fas fa-envelope"></i>
-  </a>
   <a href="https://wa.me/573223282484" target="_blank" aria-label="WhatsApp" class="whatsapp">
     <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/mukigem/" target="_blank" aria-label="Instagram" class="instagram">
+    <i class="fab fa-instagram"></i>
   </a>
   <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" class="youtube">
     <i class="fab fa-youtube"></i>
   </a>
-  <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" class="tiktok">
-    <i class="fab fa-tiktok"></i>
-  </a>
   <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="facebook">
     <i class="fab fa-facebook-f"></i>
   </a>
+  <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" class="tiktok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="mailto:muki2025@gmail.com" target="_blank" aria-label="Correo" class="correo">
+    <i class="fas fa-envelope"></i>
+  </a>
 </div>
 <br><br>
-  <p>&copy; 2025 Qimar. Todos los derechos reservados.</p>
+  <p>&copy; 2025 MUKI. Todos los derechos reservados.</p>
 
 
 </footer>
 
+<script src="js/main.js"></script>
 </body>
-<script>
-  const video = document.getElementById('videoQuimar');
-  let isReversing = false;
-  let reverseInterval;
-
-  video.playbackRate = 0.7;
-  video.loop = false; // Desactivar loop normal
-
-  video.addEventListener('ended', () => {
-    if (!isReversing) {
-      // Inicia simulación de reproducción invertida
-      isReversing = true;
-      reverseInterval = setInterval(() => {
-        if (video.currentTime <= 0) {
-          clearInterval(reverseInterval);
-          isReversing = false;
-          video.play(); // vuelve a reproducir hacia adelante
-        } else {
-          video.currentTime -= 0.033; // aproximadamente 30 fps
-        }
-      }, 33);
-    }
-  });
-</script>
-<script>
-  const toggleBtn = document.getElementById('menu-toggle');
-  const nav = document.getElementById('main-nav');
-
-  toggleBtn.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
-
-<script>
-  const aretesImg = document.querySelector('#aretes img');
-  const imagenesAretes = [
-    'resources/img/arete_1.png',
-    'resources/img/arete_2.png'
-  ];
-
-  let index = 0;
-
-  setInterval(() => {
-    // Fade out
-    aretesImg.style.opacity = 0;
-
-    // Espera el tiempo del fade y luego cambia la imagen
-    setTimeout(() => {
-      index = (index + 1) % imagenesAretes.length;
-      aretesImg.src = imagenesAretes[index];
-
-      // Fade in
-      aretesImg.style.opacity = 1;
-    }, 300); // tiempo igual a transition del CSS
-  }, 5000); // cada 5 segundos
-</script>
-
-
 </html>

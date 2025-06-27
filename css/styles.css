@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
 /* ========== RESET BÁSICO ========== */
 * {
   margin: 0;
@@ -288,26 +289,23 @@ footer p {
 .social-icons a {
   text-decoration: none;
   margin: 0 10px;
-  font-size: 1.5rem;
+  font-size: 3rem; /* Doble del original */
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Colores individuales */
-.instagram i { color: #E1306C; }
-.correo i    { color: #f9f4ea; }
-.whatsapp i  { color: #25D366; }
-.youtube i   { color: #FF0000; }
-.tiktok i    { color: #FE2C55; } /* o usa #69C9D0 si quieres el cyan */
-.facebook i  { color: #1877F2; }
+/* Un solo color para todos los íconos sociales */
+.social-icons a i {
+  color: #4be6a1; /* Verde claro, más claro que #00a16e */
+}
 
-/* Hover: elegante dorado */
 .social-icons a:hover i {
   color: #e6cc80;
   transform: scale(1.2);
 }
 
-
+/* Eliminar colores individuales */
+/* .instagram i, .correo i, .whatsapp i, .youtube i, .tiktok i, .facebook i { ... } */
 
 
 @media (max-width: 1370px) {
@@ -434,4 +432,36 @@ footer p {
   height: auto;
   opacity: 0.6;
   filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+}
+
+.inspiracion {
+  background: linear-gradient(90deg, #e6ffe6 0%, #c6f7e2 100%);
+  border-radius: 18px;
+  padding: 32px 24px;
+  margin: 40px auto 0 auto;
+  max-width: 600px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  text-align: center;
+}
+.inspiracion h3 {
+  color: #00a16e;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+.inspiracion p {
+  color: #222;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-nosotros {
+  color: #00a16e;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  margin-bottom: 24px;
 }
