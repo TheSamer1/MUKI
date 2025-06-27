@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  caret-color: transparent !important;
 }
 
 html, body {
@@ -410,6 +411,72 @@ footer p {
   font-weight: 600;
 }
 
+.catalogo-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 60px 0 60px 160px;
+  flex-wrap: wrap;
+}
+
+.catalogo-items {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.catalogo-filas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.paralelogramo-grande {
+  width: 424px;
+  height: 424px;
+  min-width: 320px;
+  min-height: 320px;
+  /* Usa el mismo clip-path que .item y .paralelogramo */
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(26, 26, 26, 0.4);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: #000;
+  position: relative;
+}
+
+.paralelogramo-grande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.catalogo-items .item span {
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.catalogo-items .item span small {
+  display: block;
+  color: #4be6a1;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.catalogo-items .fila {
+  display: flex;
+  gap: 24px;
+}
+
 /* Hover opcional */
 .item:hover {
   transform: scale(1.05)
@@ -455,7 +522,7 @@ footer p {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.titulo-nosotros {
+.titulo-principal {
   color: #00a16e;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-size: 5em;
@@ -464,4 +531,45 @@ footer p {
   padding-top: 1em;
   padding-left: 1em;
   margin-bottom: 24px;
+}
+
+@media (max-width: 1100px) {
+  .catalogo-grid {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .catalogo-items {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .paralelogramo-grande {
+    width: 90vw;
+    height: 200px;
+    min-width: unset;
+    min-height: unset;
+  }
+  .catalogo-items .item {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .paralelogramo-grande {
+    width: 90vw;
+    height: 200px;
+    min-width: unset;
+    min-height: unset;
+  }
+  .catalogo-items .item {
+    width: 120px;
+    height: 120px;
+  }
+  .catalogo-items {
+    gap: 12px;
+  }
+  .catalogo-items .fila {
+    gap: 12px;
+  }
 }
